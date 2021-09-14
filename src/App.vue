@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <h1>To-Do List</h1>
-    <to-do-item></to-do-item>
+    <to-do-item label="My ToDo Item" v-bind:done="true"></to-do-item>
   </div>
 </template>
 
