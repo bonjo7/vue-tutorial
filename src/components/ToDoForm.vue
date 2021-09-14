@@ -21,7 +21,11 @@
 export default {
     methods: {
        onSubmit() {
-          console.log('user input: ', this.userInput)
+        // console.log(`user input: ${this.userInput}`)
+        if(this.userInput !== ""){
+          this.$emit("todo-added", this.userInput);
+          this.userInput = "";
+        }
        }
    },
   data() {
