@@ -2,7 +2,7 @@
   <form class="stack-small" @submit.prevent="onSubmit">
     <div>
       <label class="edit-label">Edit Name for &quot;{{userInput}}&quot;</label>
-      <input :id="id" type="text" autocomplete="off" v-model.lazy.trim="newUserInput" />
+      <input :id="id" type="text" autocomplete="off" v-model.lazy.trim="newUserInput" ref="labelInput" />
     </div>
     <div class="btn-group">
       <button type="button" class="btn" @click="onCancel">
@@ -28,6 +28,10 @@ export default {
       required: true
     }
   },
+  mounted() {
+    const labelInputRef = this.$refs.labelInput;
+    labelInputRef.focus();
+    },
   data() {
     return {
       newUserInput: this.userInput
