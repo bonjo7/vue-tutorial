@@ -1,4 +1,6 @@
-# bonjo-todo-vue
+# Vue Tutorial ToDo List
+
+Vue.js tutorial created by following [Mozilla Developer](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/Vue_getting_started)
 
 ## Project setup
 ```
