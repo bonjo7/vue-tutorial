@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 *:focus {
-  outline: 3px dashed #228bec;
+  outline: 2px solid #228bec;
 }
 html {
   font: 62.5% / 1.15 sans-serif;

@@ -65,6 +65,7 @@ export default {
 </script>
 
 <style scoped>
+  
   .custom-checkbox > .checkbox-label {
   font-family: Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -97,7 +98,7 @@ export default {
   appearance: none;
 }
 .custom-checkbox > input:focus {
-  outline: 3px dashed #fd0;
+  outline: 3px solid #fd0;
   outline-offset: 0;
   box-shadow: inset 0 0 0 2px;
 }
@@ -149,7 +150,7 @@ export default {
 }
 .custom-checkbox > input[type="checkbox"]:focus + label::before {
   border-width: 4px;
-  outline: 3px dashed #228bec;
+  outline: 2px solid #228bec;
 }
 .custom-checkbox > label::after {
   box-sizing: content-box;

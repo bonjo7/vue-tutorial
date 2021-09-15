@@ -4,7 +4,7 @@
     <to-do-form @todo-added="addToDo"></to-do-form>
     <h2 id="list-summary" ref="listSummary" tabindex="-1">{{listSummary}}</h2>
       <ul aria-labelledby="list-summary" class="stack-large">
-        <li v-for="item in ToDoItems" :key="item.id">
+        <li  v-for="item in ToDoItems" :key="item.id">
           <to-do-item :userInput="item.userInput" v-bind:done="item.done" :id="item.id" @checkbox-changed="updateDoneStatus(item.id)" @item-deleted="deleteToDo(item.id)"
             @item-edited="editToDo(item.id, $event)"></to-do-item>
         </li>
